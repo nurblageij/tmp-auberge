@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>Map of fossils redescriptions</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="mapFossils.css">
+</head>
+<body>
+  <div id="main">
+  <div id="info">
+    <p id="choice-row">
+        Time: <select id="choice-time"> </select>
+        Climate model: <select id="choice-clim"> </select>
+        Redescription: <select id="choice-red"> </select>
+        Side: <select id="choice-side"> </select>
+     </p>
+     <p id="red"></p>
+  </div>
+  <div id="graph"></div>
+  <div id="scores"></div>
+    <!-- <h4>Map of fossils localities</h4> -->
+  <p>We show the fossil localities on a map (top, left), zoomed-in area (top, right) and on a timeline (bottom).<br>
+      The color of the dots indicates its status with respect to the redescription or cluster.
+      Detailed information about a locality can be displayed by hovering over the corresponding dot on the map or the left-hand side extremity of the corresponding segment on the timeline.<br>
+      Localities can be highlighted across the views by clicking on the corresponding dot or segment end.<br>
+      Finally, localities can be filtered by selecting a time range on the timeline through clicking and dragging.<br>
+      Possible scores reported in the table include E10, E01, E11, E00, LHS, RHS (percentage of active localities falling in the given category), J (Jaccard coefficient, as percentage), CAcc (percentage of active localities for which the satus of the climate query evaluated with the given climate model matches the status when evaluated with present day climate data).</p>
+  </div>
+  <script src="mapFossils_plotly.js"></script>
+</body>

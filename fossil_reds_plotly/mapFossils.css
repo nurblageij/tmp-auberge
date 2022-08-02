@@ -1,0 +1,80 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0px 40px 0px 40px;
+  padding: 0px;
+  color: #6b6b6b;
+  background-color: #e7e7e7;
+}
+#main {
+  vertical-align: top;
+  padding-top: 50px;
+}
+#graph {
+  vertical-align: top;
+  align: center;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+#scores table {
+border-collapse: collapse;
+}
+#scores table th.lbl_col{
+    font-size: x-small;
+    text-align: left;
+    white-space:nowrap;
+    transform: rotate(-90deg);
+    writing-mode: lr-tb;
+    padding-bottom: 0ex;
+}
+#scores table th.lbl_row{
+    white-space:nowrap;
+    font-size: x-small;
+    text-align: right;
+    padding-right: 2ex;
+}
+
+#scores table tr {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#scores table td {
+  font-size: xx-small;
+  text-align: center;
+  border: none;
+  background-color: yellow;
+  margin: 0px;
+  padding: 0px;
+  width: 5ex;
+  height: 5ex;
+}
+#scores table td.mrg_top{
+    border-width: 0px;
+    background-color: transparent;
+    height: 2ex;
+}
+#scores table td.totN {
+  text-align: left;
+  font-size: x-small;
+  border: none;
+  background-color: transparent;
+}
+
+#scores table td.selected_row{
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+#scores table td.selected_col{
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+#scores table td.selected_cell{
+  border: 2px solid orange;
+  /* background-color: red; */
+}
+#info p {
+  margin: 10px;
+}
+
